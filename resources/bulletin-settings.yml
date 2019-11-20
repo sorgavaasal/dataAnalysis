@@ -1,0 +1,4 @@
+url-setting :
+	root : https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html
+	sample-bulletin : https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2020/visa-bulletin-for-december-2019.html
+visa-bulletin-year : 2020
