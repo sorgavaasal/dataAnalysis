@@ -1,5 +1,5 @@
 import os
-from all-generic import config
+from all_generic import config 
 
 bulletin_settings = "bulletin-settings.yml"
 
