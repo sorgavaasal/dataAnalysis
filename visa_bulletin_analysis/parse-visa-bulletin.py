@@ -1,16 +1,19 @@
 import os
-from all_generic import config 
+import sys
+sys.path.insert(0, os.getcwd())
+from all_generic import config
 
 bulletin_settings = "bulletin-settings.yml"
 
-def load_settings_yml (workspace) :
-    print ('debug message for loading ')
+settings = {}
+
+
+def load_settings_yml(workspace):
     yaml_settings_file = workspace + '/' + bulletin_settings
-    print (yaml_settings_file)
-    config = config.load_settings_yml(yaml_settings_file)
-    print (config)
+    return config.load_settings_yaml(yaml_settings_file)
+
 
 if __name__ == '__main__':
     workspace = os.getcwd()
-    print ('current-working-directory', workspace)
-    load_settings_yml(workspace)
+    settings = load_settings_yml(workspace + '/resources')
+    print(settings)
